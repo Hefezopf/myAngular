@@ -1,0 +1,30 @@
+<p>
+    view {{test}} works!
+    </p>
+    xxxxx
+    
+    <div *ngIf="namesObs$ | async">
+        <div>
+          VORNAME
+            {{(namesObs$ | async)?.vn}}
+        </div>
+    </div>
+    yyyyyyyy
+    <br>
+    -----
+    <p>
+    FOR PRO
+    <li *ngFor="let name of namesPro">{{name.vn}}...</li>
+    </p>
+    ----
+    <p>
+    FOR
+    <li *ngFor="let name of names">{{name.vn}}...</li>
+    </p>
+    
+    <ul class="user__list" *ngIf="names.length">
+        <li class="user" *ngFor="let user of names">
+            {{ user.vn }} - {{ user.vn }}
+        </li>
+    </ul>
+    
